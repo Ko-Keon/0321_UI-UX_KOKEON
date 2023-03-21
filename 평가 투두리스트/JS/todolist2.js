@@ -50,7 +50,7 @@ function todoCheck(e) {
     const check = e.target
     const li = check.parentNode
     if (check.checked) {
-        li.style.color = "white"
+        li.style.color = "lightgray"
     }
     else {
         li.style.color = ""
@@ -66,6 +66,10 @@ function todoDelete(e) {
     const button = e.target
     const li = button.parentNode
     li.remove()
+    const p2 = document.querySelector("#p2")
+    p2.innerHTML = `완료 한 일 : ${done()}`
+    const p1 = document.querySelector("#p1")
+    p1.innerHTML = `전체 할 일 : ${countAll()}`
 }
 
 
