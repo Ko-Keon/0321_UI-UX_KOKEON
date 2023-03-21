@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: lightblue
+}
+
+h1 {
+    font-family: 'Single Day';
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+#clock {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#todo-form {
+    text-align: center;
+    padding-top: 70px;
+}
+
+#todolist {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+}
+
+#todolist li {
+    font-family: 'single day';
+    margin: 5px 0;
+    font-size: 2rem;
+    
+}
+
+#todolist li button {
+    float: right;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#todolist li :checked {
+    color: white;
+}
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px white solid;
+    color: white;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]+input[type="submit"] {
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+    font-weight: bolder;
+}
+
+input[type="text"]+input[type="submit"]:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+#work {
+    display: flex;
+    justify-content:center;
+    padding: 30px 0;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+#p1 {
+    margin-right: 60px;
+}
